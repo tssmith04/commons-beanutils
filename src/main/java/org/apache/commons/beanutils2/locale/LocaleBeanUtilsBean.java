@@ -56,7 +56,7 @@ public class LocaleBeanUtilsBean extends BeanUtilsBean {
                     };
 
      /** All logging goes through this logger */
-    private static final Log LOG = LogFactory.getLog(LocaleBeanUtilsBean.class);
+    private static final Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(LocaleBeanUtilsBean.class);
 
     /**
       * Gets singleton instance

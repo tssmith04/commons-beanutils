@@ -32,7 +32,7 @@ import junit.framework.TestSuite;
  */
 public class Jira273TestCase extends TestCase {
 
-    private static final Log LOG = LogFactory.getLog(Jira273TestCase.class);
+    private static final Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(Jira273TestCase.class);
 
     /**
      * Run the Test.

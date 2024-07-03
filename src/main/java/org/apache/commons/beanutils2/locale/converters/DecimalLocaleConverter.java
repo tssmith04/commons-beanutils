@@ -62,7 +62,7 @@ public class DecimalLocaleConverter<T extends Number> extends BaseLocaleConverte
     }
 
     /** All logging goes through this logger */
-    private static final Log LOG = LogFactory.getLog(DecimalLocaleConverter.class);
+    private static final Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(DecimalLocaleConverter.class);
 
     /**
      * Constructs a new builder.

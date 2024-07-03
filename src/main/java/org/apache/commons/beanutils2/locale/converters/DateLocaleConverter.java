@@ -94,7 +94,7 @@ public class DateLocaleConverter<D extends Date> extends BaseLocaleConverter<D> 
     private static final String DEFAULT_PATTERN_CHARS = DateLocaleConverter.initDefaultChars();
 
     /** All logging goes through this logger */
-    private static final Log LOG = LogFactory.getLog(DateLocaleConverter.class);
+    private static final Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(DateLocaleConverter.class);
 
     /**
      * Constructs a new builder.

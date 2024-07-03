@@ -110,7 +110,7 @@ public class MethodUtils {
         }
     }
 
-    private static final Log LOG = LogFactory.getLog(MethodUtils.class);
+    private static final Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(MethodUtils.class);
 
     /**
      * Only log warning about accessibility work around once.

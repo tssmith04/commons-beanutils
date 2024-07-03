@@ -60,7 +60,7 @@ public class StringLocaleConverter extends BaseLocaleConverter<String> {
     }
 
     /** All logging goes through this logger */
-    private static final Log LOG = LogFactory.getLog(StringLocaleConverter.class);
+    private static final Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(StringLocaleConverter.class);
 
     /**
      * Constructs a new builder.

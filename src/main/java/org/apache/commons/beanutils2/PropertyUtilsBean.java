@@ -91,7 +91,7 @@ import org.apache.commons.logging.LogFactory;
 public class PropertyUtilsBean {
 
     /** Log instance */
-    private static final Log LOG = LogFactory.getLog(PropertyUtilsBean.class);
+    private static final Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(PropertyUtilsBean.class);
 
     /**
      * Gets the PropertyUtils bean instance.

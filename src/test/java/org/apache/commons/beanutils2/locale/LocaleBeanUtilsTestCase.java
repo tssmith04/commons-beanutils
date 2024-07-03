@@ -29,7 +29,7 @@ import org.junit.jupiter.api.Test;
  */
 public class LocaleBeanUtilsTestCase {
 
-    private static final Log LOG = LogFactory.getLog(LocaleBeanUtilsTestCase.class);
+    private static final Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(LocaleBeanUtilsTestCase.class);
 
     /**
      * Test setting a nested indexed property

@@ -34,7 +34,7 @@ import junit.framework.TestSuite;
  */
 public class Jira298TestCase extends TestCase {
 
-    private static final Log LOG = LogFactory.getLog(Jira298TestCase.class);
+    private static final Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(Jira298TestCase.class);
 
     /**
      * Run the Test.

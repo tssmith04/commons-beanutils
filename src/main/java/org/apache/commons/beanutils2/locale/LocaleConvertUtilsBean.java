@@ -82,7 +82,7 @@ import org.apache.commons.logging.LogFactory;
 public class LocaleConvertUtilsBean {
 
     /** The {@code Log} instance for this class. */
-    private static final Log LOG = LogFactory.getLog(LocaleConvertUtilsBean.class);
+    private static final Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(LocaleConvertUtilsBean.class);
 
     /**
      * Gets singleton instance.

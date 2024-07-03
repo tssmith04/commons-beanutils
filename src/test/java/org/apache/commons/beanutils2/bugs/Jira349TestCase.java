@@ -59,7 +59,7 @@ public class Jira349TestCase extends TestCase {
         }
     }
 
-    private static final Log LOG = LogFactory.getLog(Jira349TestCase.class);
+    private static final Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(Jira349TestCase.class);
 
     /**
      * Run the Test.

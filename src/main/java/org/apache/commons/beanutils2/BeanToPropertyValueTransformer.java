@@ -73,7 +73,7 @@ import org.apache.commons.logging.LogFactory;
 public class BeanToPropertyValueTransformer<T, R> implements Function<T, R> {
 
     /** For logging. Each subclass gets its own log instance. */
-    private final Log log = LogFactory.getLog(this.getClass());
+    private final Log log = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(this.getClass());
 
     /** The name of the property that will be used in the transformation of the object. */
     private final String propertyName;

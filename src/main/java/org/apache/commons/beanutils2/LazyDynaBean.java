@@ -128,7 +128,7 @@ public class LazyDynaBean implements DynaBean, Serializable {
  /**
     * Commons Logging
     */
-    private static transient Log LOG = LogFactory.getLog(LazyDynaBean.class);
+    private static transient Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(LazyDynaBean.class);
 
     /** BigInteger Zero */
     protected static final BigInteger BigInteger_ZERO = new BigInteger("0");
@@ -692,7 +692,7 @@ public class LazyDynaBean implements DynaBean, Serializable {
      */
     private Log logger() {
         if (LOG == null) {
-            LOG = LogFactory.getLog(LazyDynaBean.class);
+            LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(LazyDynaBean.class);
         }
         return LOG;
     }

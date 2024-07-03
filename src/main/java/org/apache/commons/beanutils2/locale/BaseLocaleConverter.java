@@ -132,7 +132,7 @@ public abstract class BaseLocaleConverter<T> implements LocaleConverter<T> {
     }
 
     /** All logging goes through this logger */
-    private static final Log LOG = LogFactory.getLog(BaseLocaleConverter.class);
+    private static final Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(BaseLocaleConverter.class);
 
     /**
      * Checks whether the result of a conversion is conform to the specified target type. If this is the case, the passed in result object is cast to the

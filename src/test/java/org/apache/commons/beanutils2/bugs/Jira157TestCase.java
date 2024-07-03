@@ -61,7 +61,7 @@ public class Jira157TestCase extends TestCase {
         String getY();
     }
 
-    private static final Log LOG = LogFactory.getLog(Jira157TestCase.class);
+    private static final Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(Jira157TestCase.class);
 
     /**
      * Run the Test.

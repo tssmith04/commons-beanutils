@@ -420,7 +420,7 @@ public abstract class AbstractConverter<D> implements Converter<D> {
      */
     Log log() {
         if (log == null) {
-            log = LogFactory.getLog(getClass());
+            log = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(getClass());
         }
         return log;
     }

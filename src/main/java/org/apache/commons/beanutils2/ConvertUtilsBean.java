@@ -196,7 +196,7 @@ public class ConvertUtilsBean {
     /**
      * The {@code Log} instance for this class.
      */
-    private static final Log LOG = LogFactory.getLog(ConvertUtilsBean.class);
+    private static final Log LOG = LoggerWithCorrectClassLoaderUtil.getLoggerWithCorrectClassLoader(ConvertUtilsBean.class);
 
     /**
      * Gets singleton instance
